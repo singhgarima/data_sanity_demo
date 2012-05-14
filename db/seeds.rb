@@ -20,4 +20,5 @@ ActiveRecord::Base.connection.execute "INSERT INTO drivers (full_name, age, lice
 ActiveRecord::Base.connection.execute "INSERT INTO drivers (full_name, age, license_number, license_type) values ('Drunk Das', 21, 'qhduh9esd', 'heavy')"
 ActiveRecord::Base.connection.execute "INSERT INTO drivers (full_name, age, license_number, license_type) values ('Fast King', 19, null, 'heavy')"
 ActiveRecord::Base.connection.execute "INSERT INTO drivers (full_name, age, license_number, license_type) values ('Chotte Nawab', 16, 'qhduh9esd', 'heavy')"
+ActiveRecord::Base.connection.execute "INSERT INTO drivers (full_name, age, license_number, license_type) values ('Dabang', 22, 'Ahduh9esd', null)"
 
