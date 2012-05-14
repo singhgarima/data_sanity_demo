@@ -11,5 +11,13 @@ ActiveRecord::Base.connection.execute "INSERT INTO cars (company, model, price, 
 
 
 #####################################################
-###              CAR                  ###############
+###              DRIVER               ###############
 #####################################################
+Driver.create :full_name => 'SuperMan Singh', :age => 26, :license_number => 'kd82d98sjxa', :license_type => 'heavy'
+Driver.create :full_name => 'SpiderMan Basu', :age => 22, :license_number => 'askjda8sjxa', :license_type => 'light'
+
+ActiveRecord::Base.connection.execute "INSERT INTO drivers (full_name, age, license_number, license_type) values ('Wrong Kumar', null, 'qhduh9esd', 'light')"
+ActiveRecord::Base.connection.execute "INSERT INTO drivers (full_name, age, license_number, license_type) values ('Drunk Das', 21, 'qhduh9esd', 'heavy')"
+ActiveRecord::Base.connection.execute "INSERT INTO drivers (full_name, age, license_number, license_type) values ('Fast King', 19, null, 'heavy')"
+ActiveRecord::Base.connection.execute "INSERT INTO drivers (full_name, age, license_number, license_type) values ('Chotte Nawab', 16, 'qhduh9esd', 'heavy')"
+
